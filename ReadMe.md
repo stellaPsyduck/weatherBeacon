@@ -2,6 +2,12 @@
 
 This project is to make a mini-replica of the Canada Life Weather Beacon
 
+## Dependencies
+
+Python3
+rpi_ws281x-5.0.0
+
+
 ## setup.sh
 
 Is just bashscript to ensure that the scrapeWeather.py code goes off at 7:00am, 11:00am, 3:00pm, and 7:00pm, following the schedule of the actually Canada Life Weather Beacon. This only needs to be run once.

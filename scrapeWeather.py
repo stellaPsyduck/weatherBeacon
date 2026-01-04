@@ -14,11 +14,12 @@ try:
 
     lines = text.splitlines() #saves the output text as referencable lines
 
-    # with open('lastScrape.txt', 'w') as file:
-    #     file.write(text)
-
 except subprocess.CalledProcessError as e:
     print("Lynx failed:", e)
 
-print(f"Current Weather: ", lines[current_weather]) 
+curr_weather = lines[current_weather].strip()
+# print(curr_weather) 
+
+# Choose a script to constantly run until next check
+
 
